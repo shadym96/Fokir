@@ -1,0 +1,279 @@
+@media screen and (min-width: 400px) and (max-width: 599px) {
+    .container {
+        width: 370px;
+    }
+    .nav-bar .container .menu {
+        display: block;
+    } 
+    .nav-bar .container .menu:hover ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .nav-bar .container .menu i {
+        color: white;
+        font-size: 22px;
+    }
+    .nav-bar .container .menu ul {
+    background-color: #333333;
+    position: absolute;
+    top: 150%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    } 
+    .nav-bar .container .menu ul li {
+        padding: 12px 0;
+    }
+    .nav-bar .container .menu ul li .activ {
+        color: rgb(255, 48, 91);
+    }
+    .nav-bar .container .menu ul li a {
+        color: white;
+        text-transform: capitalize;
+        transition: all 0.3s;
+    }
+    .nav-bar .container .menu ul li a:hover {
+        color: rgb(255, 48, 91);
+    }
+    .nav-bar .nav-links {
+        display: none;
+    }
+    .about-section {
+        padding: 20px 0;
+    }
+    .about-section .about-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-section .about-text {
+        width: 100%;
+    }
+    .about-section .about-text {
+        padding: 0 80px;
+    }
+    .about-section .about-item::before {
+        border: none;
+    }
+    .about-section .about-item .profile {
+        transform: translate(0, 0);
+    }
+    .about-section .about-text .about-inf .buttons {
+        margin-bottom: 10px;
+    }
+    .about-section .about-text .about-inf .buttons .btn1 {
+        margin-bottom: 20px;
+    }
+    .about-section .about-text .about-inf .buttons a {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .our-services .container .card {
+        width: 100%;
+    }
+    .our-services .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .portfolio .container .card {
+        width: 100%;
+    }
+.info .container .item {
+    width: 100%;
+    padding: 30px;
+    }
+    .feedback .content .profile {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .feedback .content .profile img {
+        width: 50%;
+    }
+    .feedback .content {
+        padding: 10px;
+    }
+    .our-blog .container .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact .container {
+        width: 90%;
+        margin: auto;
+    }
+    .contact .container form input {
+        width: 100%;
+    }
+    .contact .container form .input-1 {
+        gap: 0;
+    }
+    .contact .container form .input-1 > input {
+        width: 100%;
+    }
+    .contact .container form .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px) {
+    .container {
+        width: 570px;
+    }
+    .nav-bar .container .menu {
+        display: block;
+    } 
+    .nav-bar .container .menu:hover ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .nav-bar .container .menu i {
+        color: white;
+        font-size: 22px;
+    }
+    .nav-bar .container .menu ul {
+    background-color: #333333;
+    position: absolute;
+    top: 150%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    } 
+    .nav-bar .container .menu ul li {
+        padding: 12px 0;
+    }
+    .nav-bar .container .menu ul li .activ {
+        color: rgb(255, 48, 91);
+    }
+    .nav-bar .container .menu ul li a {
+        color: white;
+        text-transform: capitalize;
+        transition: all 0.3s;
+    }
+    .nav-bar .container .menu ul li a:hover {
+        color: rgb(255, 48, 91);
+    }
+    .nav-bar .nav-links {
+        display: none;
+    }
+    .about-section {
+        padding: 20px 0;
+    }
+    .about-section .about-item {
+        width: 100%;
+    }
+    .about-section .about-text {
+        width: 100%;
+    }
+    .about-section .about-text {
+        padding: 0 80px;
+    }
+    .about-section .about-item::before {
+        border: none;
+    }
+    .about-section .about-item .profile {
+        transform: translate(0, 0);
+    }
+    .about-section .about-text .about-inf .buttons {
+        margin-bottom: 10px;
+    }
+    .about-section .about-text .about-inf .buttons .btn1 {
+        margin-bottom: 20px;
+    }
+    .our-services .container .card {
+        width: 100%;
+    }
+    .our-services {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .our-services .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .portfolio .container .card {
+        width: 100%;
+    }
+.info .container .item {
+    width: 100%;
+    padding: 30px;
+    }
+    .feedback .content .profile {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .feedback .content .profile img {
+        width: 50%;
+    }
+    .our-blog .container .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact .container {
+        width: 90%;
+        margin: auto;
+    }
+    .contact .container form input {
+        width: 100%;
+    }
+    .contact .container form .input-1 {
+        gap: 0;
+    }
+    .contact .container form .input-1 > input {
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .container {
+        width: 750px;
+    }
+    .nav-bar .container .nav-logo {
+        width: 20%;
+    }
+    .nav-bar .container .nav-links {
+        width: 80%;
+    }
+    .about-section .about-item {
+        width: 30%
+    }
+    .our-services .container .card {
+        width: 50%;
+    }
+    .portfolio .container .card {
+        width: 50%;
+    }
+    .feedback .content {
+        width: 70%;
+    }
+    .contact .container {
+        width: 70%;
+    }
+    .our-blog .container .card iframe {
+        height: 129px;
+    }
+    .portfolio .container .card {
+        width: calc((100% - 60px)/2);
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .container {
+        width: 970px;
+    }
+    .our-blog .container .card iframe {
+        height: 170px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+    .our-blog .container .card iframe {
+        height: 210px;
+    }
+}

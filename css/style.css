@@ -1,0 +1,931 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* start home  */
+.header {
+    background-image: url(../images/slider-02.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.nav-bar {
+    position: relative;
+    z-index: 9999999;
+}
+.nav-bar .container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.nav-bar .container .menu {
+    display: none;
+}
+.nav-bar .container .nav-logo a {
+    color: #ff305b;
+    font-size: 24px;
+    font-weight: 500;
+}
+.nav-bar .container .nav-links {
+    width: 50%;
+}
+.nav-bar .container .nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar .container .nav-links ul li a {
+    color: white;
+    font-weight: 300;
+    text-transform: capitalize;
+    transition: color 0.4s;
+}
+.nav-bar .container .nav-links ul li:hover a {
+    color: rgb(255, 48, 91);
+}
+.nav-bar .container .nav-links ul .activ {
+    color: rgb(255, 48, 91);
+}
+.home-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.home-text span {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.home-text h1 {
+    color: rgb(255, 48, 91);
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 10px 0
+    ;
+}
+.home-text p {
+    display: inline;
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 10px;
+    position: relative;
+}
+.home-text p::before {
+    content: "";
+    position: absolute;
+    left: 66%;
+    font-size: 26px;
+    font-weight: 300;
+    color: white;
+    text-transform: capitalize;
+    animation-name: typing;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+/* end home  */
+
+
+/* start about section  */
+.about-section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+.about-section .container {
+    margin: 0 auto;
+    display: flex;flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-section .about-item {
+    width: 30%;
+    border-radius: 5px;
+    position: relative;
+}
+.about-section .about-item::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border-radius: 5px;
+    border: 8px solid rgb(85 85 85);
+}
+.about-section .about-item .profile {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transform: translate(6%, 5%);
+    
+}
+.about-section .about-item .profile:hover .icons {
+    opacity: 1;
+    top: 0;
+}
+.about-section .about-item .profile img {
+    width: 100%;
+    border-radius: 5px;
+}
+.about-section .about-item .icons {
+    background-color: rgba(0, 0, 0, 0.57);
+    position: absolute;
+    inset: 100% 0px 0px;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.about-section .about-item .profile .icons i {
+    color: white;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    transition: all 0.3s;
+}
+.about-section .about-item .profile .icons i:hover {
+    color: #ff305b;
+}
+.about-section .about-text {
+    width: calc((100% - 100px)/2);
+}
+.about-section .about-text h2 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(51, 51, 51);
+    margin: 0 0 20px;
+    padding-left: 13px;
+    position: relative;
+}
+.about-section .about-text h2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(255, 48, 91);
+}
+.about-section .about-text .vip {
+    color: rgb(85, 85, 85);
+    line-height: 1.6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #999999;
+}
+.about-section .about-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about-section .about-text ul li {
+    width: 50%;
+    padding: 10px 0;
+    color: #555555;
+}
+.about-section .about-text ul li  span {
+    color: #333333;
+    font-weight: bold;
+}
+.about-section .about-text ul li a {
+    color: #7e7e7e;
+    font-size: 15px;
+}
+.about-section .about-text .about-inf .buttons {
+    margin-top: 5px;
+}
+.about-section .about-text .about-inf .buttons .btn1:hover  {
+    background-color: #EC2403;
+}
+.about-section .about-text .about-inf .buttons .btn2:hover  {
+    background-color: #EC2403;
+}
+.about-section .about-text .about-inf .buttons a {
+    background-color: #ff305b;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-right: 19px;
+    transition: all 0.3s;
+}
+.about-section .about-text .about-inf a i {
+    margin-left: 5px;
+}
+/* end about section  */
+
+
+/* start our services  */
+.our-services {
+    background-color: #f1f1f1;
+    padding: 80px 0 60px;
+    margin-bottom: 80px;
+}
+.our-services h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+.our-services h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 10px;
+    border-style: solid;
+    border-color: #ff305b;
+    border-width: 1px 0;
+}
+.our-services h2::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+    background-color: #ff305b;
+}
+.our-services .container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.our-services .container .card {
+    width: calc(100% / 4);
+    text-align: center;
+    padding: 40px 10px;
+    transition: all 0.3s;
+}
+.our-services .container .card:hover {
+    background-color: white;
+}
+.our-services .container .card:hover i {
+    transform: scale(1.2);
+}
+.our-services .container .card i {
+    color: #ff305b;
+    font-size: 36px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+.our-services .container .card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #333;
+}
+.our-services .container .card p {
+    color: #555555;
+    line-height: 1.5;
+}
+/* end our services  */
+
+
+/* start portfolio  */
+.portfolio {
+    margin-bottom: 80px;
+}
+.portfolio h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+.portfolio h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 10px;
+    border-style: solid;
+    border-color: #ff305b;
+    border-width: 1px 0;
+}
+.portfolio h2::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+    background-color: #ff305b;
+}
+.portfolio ul {
+width: 40%;
+margin: 0 auto 40px;
+padding: 10px;
+display: flex;
+justify-content: space-evenly;
+}
+
+.portfolio ul li a {
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+.portfolio ul li .active {
+    color: #ff305b;
+}
+.portfolio .container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.portfolio .container .card {
+    width: calc((100% - 60px)/3);
+    position: relative;
+}
+.portfolio .container .card:hover .layer {
+    opacity: 1;
+}
+.portfolio .container .card img {
+    width: 100%;
+} 
+.portfolio .container .card .layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0px;
+    left: 00px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.portfolio .container .card .layer i {
+    color: rgb(255, 48, 91);
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+/* end portfolio  */
+
+
+/* start info section  */
+.info {
+    background-color: #f1f1f1;
+    margin-bottom: 80px;
+}
+.info .container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info .container .item {
+    padding: 80px 20px;
+    text-align: center;
+}
+.info .container .item i {
+    color: rgb(255, 48, 91);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.info .container .item h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(51, 51, 51);
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.info .container .item span {
+    font-family: "Source Sans Pro", sans-serif;
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    font-weight: 600;
+}
+/* end  info section  */
+
+
+/* start feedback  */
+.feedback {
+    margin-bottom: 80px;
+}
+.feedback h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+.feedback h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 10px;
+    border-style: solid;
+    border-color: #ff305b;
+    border-width: 1px 0;
+}
+.feedback h2::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+    background-color: #ff305b;
+}
+.feedback .content {
+    background-color: rgb(241, 241, 241);;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.feedback .content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3px;
+    border-width: 170px 200px 0 0px;
+    border-style: solid;
+    border-color: rgb(255, 48, 91) transparent;
+}
+.feedback .content::before {
+    content: "";
+    position: absolute;
+}
+.feedback .content .profile {
+    width: 25%;
+    padding-right: 10px;
+}
+.feedback .content .profile img {
+    position: relative;
+    width: 80%;
+    border-radius: 50%;
+    z-index: 22;
+}
+.feedback .content .text {
+    width: 75%;
+} 
+.feedback .content .text h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    margin-bottom: 10px;
+}
+.feedback .content .text a {
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+}
+.feedback .content .text a i {
+    font-size: 12px;
+}
+.feedback .content .text p {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 15px 0;
+    color: #555555;
+}
+.feedback .content .text .icons {
+    margin-bottom: 10px;
+}
+.feedback .content .text .icons i {
+    color: rgb(241, 195, 13);
+} 
+.feedback .dots {
+    width: 50%;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+}
+.feedback .dot-activ {
+    display: inline-block;
+    width: 25px;
+    height: 10px;
+    background-color: rgb(255, 48, 91);
+    border-radius: 10px;
+}
+.feedback .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 48, 91);
+}
+
+/* end feedback  */
+
+
+/* start our blog  */
+.our-blog {
+    background-color: #f1f1f1;
+    padding: 80px 0;
+}
+.our-blog h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+.our-blog h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 10px;
+    border-style: solid;
+    border-color: #ff305b;
+    border-width: 1px 0;
+}    
+.our-blog h2::after {    
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+    background-color: #ff305b;
+}
+.our-blog .container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.our-blog .container .card {
+    width: calc((100% - 40px)/3);
+}
+.our-blog .container .card img {
+    width: 100%;
+}
+.our-blog .container .card iframe {
+    width: 100%;
+    height: 129px;
+}
+.our-blog .container .card .content {
+    background-color: white;
+    padding: 20px;
+}
+.our-blog .container .card .content span {
+    display: inline-block;
+    color: rgb(85, 85, 85);
+    margin-bottom: 10px;
+}
+.our-blog .container .card .content h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.our-blog .container .card .content h3:hover a {
+    color: rgb(255, 48, 91);
+    transition: all 0.3s;
+}
+.our-blog .container .card .content h3 a {
+    color: rgb(51, 51, 51);
+    text-transform: capitalize;
+}
+.our-blog .container .card .content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: rgb(85, 85, 85);
+}
+.our-blog .container .card a {
+    color: rgb(51, 51, 51);
+    transition: all 0.3s;
+} 
+.our-blog .container .card a:hover  {
+    color: rgb(255, 48, 91);
+}
+.our-blog .container .card a:hover i {
+    color: rgb(255, 48, 91);
+}
+.our-blog .container .card a i {
+    color: rgb(51, 51, 51);
+    transition: all 0.3s;
+}
+/* end our blog  */
+
+
+/* start contact  */
+.contact {
+    margin: 80px auto;
+}
+.contact h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    position: relative;
+}
+.contact h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 10px;
+    border-style: solid;
+    border-color: #ff305b;
+    border-width: 1px 0;
+}
+.contact h2::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 1px;
+    background-color: #ff305b;
+} 
+.contact .container {
+    margin: 0 auto;
+    width: 60%;
+}
+.contact .container form {
+    padding: 20px;
+    }
+.contact .container form input {
+    color: #555;
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.contact .container form .input-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.contact .container form .input-1 > input {
+    width: calc((100% - 20px)/2);
+}
+.contact .container form #sub {
+    width: 100%;
+}
+.contact .container form textarea {
+    font-family: inherit;
+    color: #555;
+    background-color: #fff;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 10%;
+}
+.contact .container form .btn {
+    width: 30%;
+}
+.contact .container form .btn button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #ff305b;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.contact .container form .btn button:hover {
+    background-color: #EC2403;;
+}
+/* end contact  */
+
+
+/* start footer  */
+.footer {
+    padding: 60px 0;
+    background-color: #333333;
+}
+.footer .container {
+    margin: auto;
+    text-align: center;
+}
+.footer .container .icons {
+    width: 50%;
+    margin:15px  auto;
+}
+.footer .container .icons i {
+    color: white;
+    font-size: 17px;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+.footer .container .icons i:hover {
+    color: #ff305b;
+}
+.footer .container p {
+    color: white;
+}
+.footer .container a {
+    color: #ff305b;
+    transition: all 0.3s;
+}
+.footer .container a:hover {
+    text-decoration: underline;
+}
+/* end footer  */
+
+
+
+
+/* start animation  */
+@keyframes typing {
+    0% {
+        content: "d|";
+    }
+    3% {
+        content: "de|";
+    }
+    6% {
+        content: "dev|";
+    }
+    9% {
+        content: "deve|";
+    }
+    12% {
+        content: "devel|";
+    }
+    15% {
+        content: "develo|";
+    }
+    18% {
+        content: "develop|";
+    }
+    21% {
+        content: "develope|";
+    }
+    24% {
+        content: "developer|";
+    }
+    27% {
+        content: "developer|";
+    }
+    30% {
+        content: "develope|";
+    }
+    33% {
+        content: "develop|";
+    }
+    36% {
+        content: "develo|";
+    }
+    39% {
+        content: "devel|";
+    }
+    42% {
+        content: "deve|";
+    }
+    45% {
+        content: "dev|";
+    }
+    48% {
+        content: "de|";
+    }
+    51% {
+        content: "d|";
+    }
+    54% {
+        content: "de|";
+    }
+    57% {
+        content: "des|";
+    }
+    60% {
+        content: "desi|";
+    }
+    63% {
+        content: "desig|";
+    }
+    66% {
+        content: "design|";
+    }
+    69% {
+        content: "designe|";
+    }
+    72% {
+        content: "designer|";
+    }
+    75% {
+        content: "designer|";
+    }
+    78% {
+        content: "designer|";
+    }
+    81% {
+        content: "designe|";
+    }
+    84% {
+        content: "design|";
+    }
+    87% {
+        content: "desig|";
+    }
+    90% {
+        content: "desi|";
+    }
+    93% {
+        content: "des|";
+    }
+    96% {
+        content: "de|";
+    }
+    100% {
+        content: "d|";
+    }
+    
+}
+/* end animation  */
+
+
+
+
+
+
+
